@@ -1,8 +1,10 @@
 package com.demo.my.kotlindemo
 
+import com.demo.my.kotlindemo.bean.Person
 import org.junit.Test
 
 import org.junit.Assert.*
+import java.util.*
 
 /**
  * Example local unit test, which will execute on the development machine (host).
