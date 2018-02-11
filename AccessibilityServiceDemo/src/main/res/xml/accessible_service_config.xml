@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--安卓4.0之后可以通过meta-data标签指定xml文件进行配置-->
+<accessibility-service
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/app_name"
+    android:accessibilityEventTypes="typeWindowStateChanged|typeWindowContentChanged|typeAllMask"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagDefault"
+    android:canRetrieveWindowContent="true"
+    android:notificationTimeout="10"
+    android:packageNames="com.tencent.mm,com.demo.my.myapplication"
+    />
+
+    <!--android:accessibilityEventTypes 	辅助服务关注的事件类型-->
+    <!--当前配置：typeWindowStateChanged|typeWindowContentChanged（对应等下需要使用到的事件）-->
+    <!--当前配置：feedbackGeneric（通用）-->
+    <!--android:accessibilityFlags 	辅助服务额外的flag信息-->
+    <!--当前配置：flagDefault（默认）-->
+    <!--当前配置：true-->
+    <!--android:notificationTimeout 	两个同样类型的辅助事件发给辅助服务的最小时间间隔-->
+    <!--当前配置：10-->
+    <!--android:packageNames 	辅助服务监听的应用包名，可监听多个应用包名，使用逗号隔开。-->
+    <!--当前配置：com.tencent.mm（监听微信发出的事件）-->
+
+    <!--accessibilityEventTypes：表示该服务对界面中的哪些变化感兴趣，即哪些事件通知，比如窗口打开，滑动，焦点变化，长按等。具体的值可以在AccessibilityEvent类中查到，如typeAllMask表示接受所有的事件通知-->
+    <!--accessibilityFeedbackType：表示反馈方式，比如是语音播放，还是震动-->
+    <!--canRetrieveWindowContent：表示该服务能否访问活动窗口中的内容。也就是如果你希望在服务中获取窗体内容，则需要设置其值为true-->
+    <!--description：对该无障碍功能的描述-->
