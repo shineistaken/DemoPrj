@@ -1,2 +1,4 @@
+//include ':app', ':kotlindemo', ':bombView', ':annotationDemo', ':annotation_lib', ':processor_lib'
+include ':annotationDemo', ':annotation_lib', ':processor_lib'
 //include ':app', ':kotlindemo'
-include ':kotlindemo', ':AccessibilityServiceDemo'
+//include ':kotlindemo', ':AccessibilityServiceDemo'
