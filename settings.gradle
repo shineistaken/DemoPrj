@@ -2,4 +2,5 @@
 //include ':annotationDemo', ':annotation_lib', ':processor_lib'
 //include ':app', ':kotlindemo'
 //include ':kotlindemo', ':AccessibilityServiceDemo'
-include ':meterial_animations_demo'
+//include ':meterial_animations_demo'
+include ':BombView'
