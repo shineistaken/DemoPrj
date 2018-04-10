@@ -3,4 +3,5 @@
 //include ':app', ':kotlindemo'
 //include ':kotlindemo', ':AccessibilityServiceDemo'
 //include ':meterial_animations_demo'
-include ':BombView'
+//include ':BombView'
+include ':weather_app'
